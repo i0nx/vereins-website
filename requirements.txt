@@ -1,0 +1,15 @@
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm install react-router-dom
+npm install express cors
+
+cd backend
+npm init -y
+npm install express cors body-parser redis dotenv bcrypt
+npm install redis
+npm install -g nodemon
+docker run --name redis-server -d -p 6379:6379 redis
+npm start
+
+
+npm run dev

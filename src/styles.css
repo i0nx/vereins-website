@@ -1,0 +1,97 @@
+/* styles.css */
+
+/* Allgemeines Layout */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1f2937; /* Dunkelgrau */
+    color: #f3f4f6; /* Helles Grau */
+}
+
+/* Navigation - am rechten Rand fixiert */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 100%;
+    background: linear-gradient(to left, #1E3A8A, #1D4ED8); /* Blau Gradient */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+    z-index: 10;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #3B82F6; /* Hellblau */
+}
+
+/* Main Content - zentriert */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937; /* Dunkelgrau */
+    padding: 12rem 2rem;
+}
+
+/* Maximale Breite des Inhalts */
+.text-center {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #111827; /* Schwarz */
+    padding: 24px 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    color: #D1D5DB; /* Helles Grau */
+    font-size: 14px;
+}
+
+/* Max Width for Containers */
+.max-w-7xl {
+    max-width: 80rem;
+}
+
+.max-w-3xl {
+    max-width: 48rem;
+}
+
+/* Responsive Anpassungen für kleine Bildschirme */
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 16px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+}
